@@ -1,3 +1,3 @@
-var alpha = require('@ninjakttty/alpha')
-var beta = require('@ninjakttty/beta')
+var alpha = require('@ninjakttty/at2')
+var beta = require('@ninjakttty/bt2')
 console.log(`${alpha} ${beta}`)
