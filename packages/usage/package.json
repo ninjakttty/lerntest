@@ -1,0 +1,19 @@
+{
+  "name": "@ninjakttty/usage",
+  "version": "0.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yuri A. Parsons <yuri@ninjakitty.net> (http://ninjakitty.net/)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ninjakttty/alpha": "^0.0.2",
+    "@ninjakttty/beta": "^0.0.1"
+  }
+}
