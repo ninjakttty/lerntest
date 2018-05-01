@@ -1,39 +1,19 @@
-0 silly input [ 'test' ]
-1 silly flags { _: [ 'run' ],
-1 silly flags   'reject-cycles': false,
-1 silly flags   rejectCycles: false,
-1 silly flags   script: 'test',
-1 silly flags   args: [] }
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
 2 verbose rootPath /Users/yuri/temp/lernind
 3 info version 2.10.2
-4 silly existsSync /Users/yuri/temp/lernind/VERSION
-5 info versioning independent
-6 silly initialize attempt
-7 silly initialize success
-8 silly execute attempt
-9 silly runScriptInDir test [] alpha
-10 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/alpha' }
-11 silly runScriptInDir test [] beta
-12 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/beta' }
-13 error test Errored while running script in '@ninjakttty/bt2'
-14 error execute callback with error
-15 error Error: Command failed: npm run test
-15 error npm ERR! code ELIFECYCLE
-15 error npm ERR! errno 1
-15 error npm ERR! @ninjakttty/bt2@0.0.2 test: `echo "Error: no test specified" && exit 1`
-15 error npm ERR! Exit status 1
-15 error npm ERR!
-15 error npm ERR! Failed at the @ninjakttty/bt2@0.0.2 test script.
-15 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-15 error npm WARN Local package.json exists, but node_modules missing, did you mean to install?
-15 error
-15 error npm ERR! A complete log of this run can be found in:
-15 error npm ERR!     /Users/yuri/.npm/_logs/2018-05-01T09_15_09_557Z-debug.log
-15 error
-15 error > @ninjakttty/bt2@0.0.2 test /Users/yuri/temp/lernind/packages/beta
-15 error > echo "Error: no test specified" && exit 1
-15 error
-15 error Error: no test specified
-15 error
-15 error     at Promise.all.then.arr (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-15 error     at <anonymous>
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/yuri/temp/lernind/VERSION
+7 info versioning independent
+8 error EPACKAGES Errored while collecting packages and package graph
+9 error JSONError: Unexpected token } in JSON at position 292 while parsing near '... "license": "MIT",}' in packages/alpha/package.json
+9 error     at module.exports (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/parse-json/index.js:26:19)
+9 error     at parse (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/load-json-file/index.js:8:29)
+9 error     at Function.module.exports.sync.fp [as sync] (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/load-json-file/index.js:11:29)
+9 error     at Function.module.exports.sync (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/read-pkg/index.js:40:25)
+9 error     at /Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/PackageUtilities.js:138:47
+9 error     at Array.forEach (<anonymous>)
+9 error     at /Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/PackageUtilities.js:132:86
+9 error     at Array.forEach (<anonymous>)
+9 error     at Function.getPackages (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/PackageUtilities.js:131:22)
