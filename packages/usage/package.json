@@ -1,6 +1,6 @@
 {
-  "name": "@ninjakttty/usage",
-  "version": "0.0.3",
+  "name": "@ninjakttty/ut2",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ninjakttty/alpha": "^0.0.2",
-    "@ninjakttty/beta": "^0.0.1"
+    "@ninjakttty/at2": "^0.0.2",
+    "@ninjakttty/bt2": "^0.0.2"
   }
 }
