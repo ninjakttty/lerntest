@@ -9,7 +9,5 @@
   "keywords": [],
   "author": "Yuri A. Parsons <yuri@ninjakitty.net> (http://ninjakitty.net/)",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+
 }
