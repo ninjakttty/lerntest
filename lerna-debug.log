@@ -1,0 +1,72 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /Users/yuri/temp/lernind
+3 info version 2.10.2
+4 silly existsSync /Users/yuri/temp/lernind/VERSION
+5 info versioning independent
+6 silly initialize attempt
+7 silly npmConfig { registry: undefined,
+7 silly npmConfig   npmClient: undefined,
+7 silly npmConfig   npmClientArgs: undefined,
+7 silly npmConfig   mutex: undefined }
+8 silly initialize success
+9 silly execute attempt
+10 info Bootstrapping 3 packages
+11 info lifecycle preinstall
+12 silly runScript preinstall @ninjakttty/at2
+13 silly @ninjakttty/at2
+14 silly runScript preinstall @ninjakttty/bt2
+15 silly @ninjakttty/bt2
+16 silly runScript preinstall @ninjakttty/ut2
+17 silly @ninjakttty/ut2
+18 silly hasDependencyInstalled @ninjakttty/ut2 @ninjakttty/alpha
+19 silly dependencyIsSatisfied [ '@ninjakttty/alpha',
+19 silly dependencyIsSatisfied   '^0.0.2',
+19 silly dependencyIsSatisfied   '/Users/yuri/temp/lernind/packages/usage/node_modules' ]
+20 verbose dependencyIsSatisfied @ninjakttty/alpha false
+21 silly hasDependencyInstalled @ninjakttty/ut2 @ninjakttty/beta
+22 silly dependencyIsSatisfied [ '@ninjakttty/beta',
+22 silly dependencyIsSatisfied   '^0.0.1',
+22 silly dependencyIsSatisfied   '/Users/yuri/temp/lernind/packages/usage/node_modules' ]
+23 verbose dependencyIsSatisfied @ninjakttty/beta true
+24 silly root dependencies []
+25 silly leaf dependencies {
+25 silly leaf dependencies   "@ninjakttty/ut2": [
+25 silly leaf dependencies     {
+25 silly leaf dependencies       "dependency": "@ninjakttty/alpha@^0.0.2",
+25 silly leaf dependencies       "isSatisfied": false
+25 silly leaf dependencies     },
+25 silly leaf dependencies     {
+25 silly leaf dependencies       "dependency": "@ninjakttty/beta@^0.0.1",
+25 silly leaf dependencies       "isSatisfied": true
+25 silly leaf dependencies     }
+25 silly leaf dependencies   ]
+25 silly leaf dependencies }
+26 info Installing external dependencies
+27 verbose actions 1 actions, concurrency 4
+28 silly installInDir usage [ '@ninjakttty/alpha@^0.0.2', '@ninjakttty/beta@^0.0.1' ]
+29 silly installInDir backup /Users/yuri/temp/lernind/packages/usage/package.json
+30 silly rename [ '/Users/yuri/temp/lernind/packages/usage/package.json',
+30 silly rename   '/Users/yuri/temp/lernind/packages/usage/package.json.lerna_backup' ]
+31 silly installInDir writing tempJson { dependencies: { '@ninjakttty/alpha': '^0.0.2', '@ninjakttty/beta': '^0.0.1' } }
+32 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/usage' }
+33 silly installInDir [ 'npm', [ 'install' ] ]
+34 silly installInDir cleanup /Users/yuri/temp/lernind/packages/usage/package.json
+35 silly renameSync [ '/Users/yuri/temp/lernind/packages/usage/package.json.lerna_backup',
+35 silly renameSync   '/Users/yuri/temp/lernind/packages/usage/package.json' ]
+36 verbose installed leaf @ninjakttty/ut2
+37 error execute callback with error
+38 error Error: Command failed: npm install
+38 error npm ERR! code ETARGET
+38 error npm ERR! notarget No matching version found for @ninjakttty/alpha@^0.0.2
+38 error npm ERR! notarget In most cases you or one of your dependencies are requesting
+38 error npm ERR! notarget a package version that doesn't exist.
+38 error
+38 error npm ERR! A complete log of this run can be found in:
+38 error npm ERR!     /Users/yuri/.npm/_logs/2018-05-01T08_56_55_461Z-debug.log
+38 error
+38 error     at Promise.all.then.arr (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+38 error     at <anonymous>
