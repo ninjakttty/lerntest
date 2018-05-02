@@ -1,1 +1,1 @@
-module.exports = 'newer module bt2'
+module.exports = 'newer module dsafas'
