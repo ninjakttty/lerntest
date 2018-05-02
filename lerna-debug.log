@@ -1,5 +1,8 @@
 0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+1 silly flags { _: [ 'publish' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   force: true }
 2 verbose rootPath /Users/yuri/temp/lernind
 3 info version 2.10.2
 4 silly isInitialized
@@ -18,85 +21,46 @@
 17 silly hasTags
 18 verbose hasTags true
 19 silly getLastTag
-20 verbose getLastTag @ninjakttty/at2@0.0.11
-21 info Comparing with @ninjakttty/at2@0.0.11.
-22 silly diffSinceIn @ninjakttty/at2@0.0.11 packages/alpha
+20 verbose getLastTag @ninjakttty/zt2@0.0.2
+21 info Comparing with @ninjakttty/zt2@0.0.2.
+22 silly diffSinceIn @ninjakttty/zt2@0.0.2 packages/alpha
 23 silly diff
-24 silly diffSinceIn @ninjakttty/at2@0.0.11 packages/beta
-25 silly diff
-26 silly diffSinceIn @ninjakttty/at2@0.0.11 packages/zeta
-27 silly diff packages/zeta/index.js
-27 silly diff packages/zeta/package.json
-28 verbose updated @ninjakttty/zt2
+24 silly diffSinceIn @ninjakttty/zt2@0.0.2 packages/beta
+25 silly diff packages/beta/index.js
+25 silly diff packages/beta/package.json
+26 silly diffSinceIn @ninjakttty/zt2@0.0.2 packages/zeta
+27 silly diff
+28 verbose updated @ninjakttty/bt2
 29 info Checking for prereleased packages...
 30 silly collectDependents
-31 silly isPackageDependentOf @ninjakttty/at2 @ninjakttty/zt2
-32 silly isPackageDependentOf @ninjakttty/bt2 @ninjakttty/zt2
-33 silly isPackageDependentOf @ninjakttty/zt2 @ninjakttty/zt2
+31 silly isPackageDependentOf @ninjakttty/at2 @ninjakttty/bt2
+32 silly isPackageDependentOf @ninjakttty/bt2 @ninjakttty/bt2
+33 silly isPackageDependentOf @ninjakttty/zt2 @ninjakttty/bt2
 34 silly collectUpdates
-35 verbose has filtered update @ninjakttty/zt2
+35 verbose has filtered update @ninjakttty/bt2
 36 silly initialize success
 37 silly execute attempt
 38 silly runScriptSync preversion undefined
-39 silly runScriptSync preversion @ninjakttty/zt2
-40 silly runScriptSync version @ninjakttty/zt2
+39 silly runScriptSync preversion @ninjakttty/bt2
+40 silly runScriptSync version @ninjakttty/bt2
 41 silly runScriptSync version undefined
-42 silly addFile /Users/yuri/temp/lernind/packages/zeta/package.json
+42 silly addFile /Users/yuri/temp/lernind/packages/beta/package.json
 43 silly commit Publish
 43 silly commit
-43 silly commit  - @ninjakttty/zt2@0.0.2
+43 silly commit  - @ninjakttty/bt2@0.0.10
 44 verbose commit [ 'commit',
 44 verbose commit   '--no-verify',
 44 verbose commit   '-F',
-44 verbose commit   '/private/var/folders/3j/6x00jtcj373dvm5tb6nxz3pm0000gn/T/efa19b28-8131-48d9-808a-34398409e7f1/lerna-commit.txt' ]
-45 silly addTag @ninjakttty/zt2@0.0.2
-46 silly runScriptSync postversion @ninjakttty/zt2
-47 silly runScriptSync postversion undefined
-48 info publish Publishing packages to npm...
-49 silly existsSync /Users/yuri/temp/lernind/packages/zeta/scripts/prepublish.js
-50 verbose execScript No prepublish script found at /Users/yuri/temp/lernind/packages/zeta/scripts/prepublish.js
-51 verbose publishing @ninjakttty/zt2
-52 silly publishTaggedInDir latest zeta
-53 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/zeta' }
-54 error publish Retrying failed publish: @ninjakttty/zt2
-55 verbose publish error undefined
-56 verbose publishing @ninjakttty/zt2
-57 silly publishTaggedInDir latest zeta
-58 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/zeta' }
-59 error publish Retrying failed publish: @ninjakttty/zt2
-60 verbose publish error undefined
-61 verbose publishing @ninjakttty/zt2
-62 silly publishTaggedInDir latest zeta
-63 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/zeta' }
-64 error publish Retrying failed publish: @ninjakttty/zt2
-65 verbose publish error undefined
-66 verbose publishing @ninjakttty/zt2
-67 silly publishTaggedInDir latest zeta
-68 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/zeta' }
-69 error publish Retrying failed publish: @ninjakttty/zt2
-70 verbose publish error undefined
-71 verbose publishing @ninjakttty/zt2
-72 silly publishTaggedInDir latest zeta
-73 silly getExecOpts { cwd: '/Users/yuri/temp/lernind/packages/zeta' }
-74 error publish Ran out of retries while publishing @ninjakttty/zt2 Error: Command failed: npm publish --tag latest
-74 error publish npm ERR! publish Failed PUT 402
-74 error publish npm ERR! code E402
-74 error publish npm ERR! You must sign up for private packages : @ninjakttty/zt2
-74 error publish
-74 error publish npm ERR! A complete log of this run can be found in:
-74 error publish npm ERR!     /Users/yuri/.npm/_logs/2018-05-01T18_22_30_290Z-debug.log
-74 error publish
-74 error publish     at Promise.all.then.arr (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-74 error publish     at <anonymous>
-74 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
-75 error execute callback with error
-76 error Error: Command failed: npm publish --tag latest
-76 error npm ERR! publish Failed PUT 402
-76 error npm ERR! code E402
-76 error npm ERR! You must sign up for private packages : @ninjakttty/zt2
-76 error
-76 error npm ERR! A complete log of this run can be found in:
-76 error npm ERR!     /Users/yuri/.npm/_logs/2018-05-01T18_22_30_290Z-debug.log
-76 error
-76 error     at Promise.all.then.arr (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-76 error     at <anonymous>
+44 verbose commit   '/private/var/folders/3j/6x00jtcj373dvm5tb6nxz3pm0000gn/T/a0d99a00-18e6-4833-8014-5466f8eac1b7/lerna-commit.txt' ]
+45 silly addTag @ninjakttty/bt2@0.0.10
+46 error execute caught error
+47 error Error: fatal: tag '@ninjakttty/bt2@0.0.10' already exists
+47 error
+47 error     at Function.module.exports.sync (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+47 error     at Function.execSync (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+47 error     at Function.addTag (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/GitUtilities.js:100:39)
+47 error     at /Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:767:39
+47 error     at Array.forEach (<anonymous>)
+47 error     at PublishCommand.gitCommitAndTagVersionForUpdates (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:766:12)
+47 error     at PublishCommand.commitAndTagUpdates (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:738:26)
+47 error     at PublishCommand.execute (/Users/yuri/.nvm/versions/node/v8.9.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
