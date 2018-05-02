@@ -1,1 +1,1 @@
-module.exports = 'newer module dsafas'
+module.exports = 'beta is awesome'
